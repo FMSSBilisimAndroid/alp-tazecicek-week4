@@ -14,15 +14,63 @@
         tools:context=".HomeFragment" >
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/background_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:src="@drawable/purple_background_grad"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.651"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.425" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/astronomer_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.713"
+            app:srcCompat="@drawable/started_astronomer"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/lets_explore_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_light"
+            android:text="@string/let_s_explore"
+            android:textColor="@color/white"
+            android:textFontWeight="800"
+            android:textSize="@dimen/_40ssp"
+            app:layout_constraintBottom_toTopOf="@+id/astronomer_View"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/lets_go_btn"
+            android:layout_width="@dimen/_275sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#6A3BB4"
+            android:drawableRight="@drawable/rocket"
+            android:fontFamily="@font/open_sans_bold"
+            android:paddingStart="@dimen/_70sdp"
+            android:paddingEnd="@dimen/_70sdp"
+            android:text="Let's Go"
+            android:textAllCaps="false"
+            android:textFontWeight="700"
+            android:textSize="@dimen/_18ssp"
+            app:cornerRadius="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/astronomer_View"
+            tools:ignore="RtlSymmetry" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

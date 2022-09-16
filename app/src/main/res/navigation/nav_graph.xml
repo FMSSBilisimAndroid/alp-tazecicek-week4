@@ -9,5 +9,23 @@
         android:id="@+id/homeFragment"
         android:name="com.alptazecicek.marsrealestate.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.alptazecicek.marsrealestate.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_lookUpFragment"
+            app:destination="@id/lookUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lookUpFragment"
+        android:name="com.alptazecicek.marsrealestate.LookUpFragment"
+        android:label="fragment_look_up"
+        tools:layout="@layout/fragment_look_up" />
 </navigation>
