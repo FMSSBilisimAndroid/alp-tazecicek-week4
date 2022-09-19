@@ -15,7 +15,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="184dp"
+            android:layout_width="178dp"
             android:layout_height="133dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +28,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/roboto"
-            android:text="$100.000"
+            android:text="@{estateModel.price}"
             android:textColor="@color/black"
             android:textFontWeight="900"
             android:textSize="@dimen/_16ssp"
@@ -39,22 +39,24 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/orbitron"
-            android:text="41°24'12.2&quot;N"
+            android:text="@{estateModel.id}"
             android:textSize="@dimen/_8ssp"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/orbitron"
-            android:text="2°10'26.5&quot;E"
-            android:textSize="@dimen/_8ssp"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@{estateModel.type}"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
